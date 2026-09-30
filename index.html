@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Marketing Executive Case Study — Andrea Colella</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#141F5C;
+    --blue:#0F62D6;
+    --blue-soft:#E8F0FD;
+    --sand:#F1ECE4;
+    --sand-deep:#E4DCD0;
+    --ink:#1C2230;
+    --mute:#6B7486;
+    --rule:#E6E8EE;
+    --amber:#B8860F;
+    --amber-soft:#FBF4E5;
+    --nav:50px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#fff;color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;line-height:1.6;
+  }
+  h1,h2,h3,h4{font-family:"Poppins",sans-serif;font-weight:600;letter-spacing:-.01em;color:var(--navy)}
+  .wrap{max-width:1300px;margin:0 auto;padding:0 2rem}
+
+  /* ---------- masthead ---------- */
+  .masthead{background:var(--sand);border-bottom:1px solid var(--sand-deep)}
+  .mast-in{max-width:1300px;margin:0 auto;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .mark{display:flex;align-items:center;gap:.7rem}
+  .badge{
+    width:36px;height:36px;border-radius:50%;background:var(--blue);color:#fff;
+    display:grid;place-items:center;font-family:"Poppins",sans-serif;font-weight:700;font-size:.7rem;
+  }
+  .mark-txt{font-family:"Poppins",sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.07em;color:var(--navy)}
+  .mark-txt em{font-style:normal;color:var(--blue)}
+  .who{font-size:.8rem;color:var(--mute)}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--rule);backdrop-filter:blur(8px)}
+  .nav-in{max-width:1300px;margin:0 auto;padding:0 2rem;display:flex;gap:.3rem;overflow-x:auto;scrollbar-width:none}
+  .nav-in::-webkit-scrollbar{display:none}
+  .nav-in button{
+    flex:0 0 auto;background:none;border:0;cursor:pointer;
+    font-family:"Poppins",sans-serif;font-size:.88rem;font-weight:500;color:var(--mute);
+    padding:.85rem .9rem;border-bottom:3px solid transparent;white-space:nowrap;
+  }
+  .nav-in button:hover{color:var(--navy)}
+  .nav-in button[aria-selected="true"]{color:var(--navy);font-weight:600;border-bottom-color:var(--blue)}
+  .nav-in button span{color:var(--blue);font-weight:600;font-size:.76rem;margin-right:.45rem}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+
+  /* ---------- panels ---------- */
+  .panel[hidden]{display:none!important}
+  .intro{padding:1.7rem 0 1.3rem}
+  .intro h1{font-size:clamp(1.45rem,2.4vw,1.9rem);line-height:1.2}
+  .intro p{margin-top:.35rem;color:var(--mute);font-size:.93rem;max-width:66ch}
+
+  /* ---------- tab 1: fixed notes, scrolling doc ---------- */
+  .scrolly{padding-bottom:3rem}
+  @media(min-width:1000px){
+    .scrolly{
+      display:grid;grid-template-columns:minmax(300px,.82fr) minmax(0,1fr);gap:5.5rem;
+      height:calc(100vh - 245px);min-height:400px;
+    }
+    .notes-col{height:100%;display:flex;align-items:center;overflow:hidden}
+    .doc-scroll{height:100%;overflow-y:auto;padding-right:2rem;scrollbar-width:thin}
+    .doc-scroll::-webkit-scrollbar{width:6px}
+    .doc-scroll::-webkit-scrollbar-thumb{background:var(--sand-deep);border-radius:3px}
+  }
+  .notes-inner{width:100%}
+  .note{display:none}
+  .note.on{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.note.on{animation:none}}
+  @media(max-width:999px){
+    .note{display:block;margin-bottom:1.2rem}
+  }
+  .note-card{
+    background:var(--sand);border-left:4px solid var(--blue);border-radius:0 8px 8px 0;
+    padding:1.7rem 1.8rem;box-shadow:0 1px 4px rgba(20,31,92,.07);
+  }
+  .step{
+    display:inline-block;font-family:"Poppins",sans-serif;font-size:.68rem;font-weight:600;
+    letter-spacing:.09em;text-transform:uppercase;color:var(--blue);
+    background:#fff;padding:.25rem .6rem;border-radius:999px;
+  }
+  .note h3{font-size:1.08rem;margin:.65rem 0 1.05rem}
+  .note dl{margin:0}
+  .note dt{
+    font-family:"Poppins",sans-serif;font-size:.66rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:1.15rem;
+  }
+  .note dt:first-child{margin-top:0}
+  .note dd{margin:.25rem 0 0;font-size:.88rem;line-height:1.65}
+  .flag{
+    margin-top:.9rem;background:var(--amber-soft);border-left:3px solid var(--amber);
+    padding:.55rem .75rem;font-size:.84rem;line-height:1.5;color:#7A5A12;border-radius:0 4px 4px 0;
+  }
+  .flag b{font-weight:600}
+
+  /* ---------- article ---------- */
+  .doc{max-width:62ch;padding-bottom:3rem}
+  .doc-title{font-family:"Poppins",sans-serif;font-weight:600;color:var(--navy);font-size:1.4rem;line-height:1.25;margin-bottom:1.3rem}
+  .doc h4{font-size:1.02rem;margin:2rem 0 .6rem}
+  .doc p{margin-bottom:.9rem}
+  .doc blockquote{border-left:3px solid var(--sand-deep);padding-left:1.1rem;margin:1.2rem 0;color:#3B4354;font-style:italic}
+  .doc ul{margin:0 0 1rem 1.15rem}
+  .doc li{margin-bottom:.35rem}
+  .seg{transition:background .3s ease;border-radius:3px}
+  .seg.live{background:var(--blue-soft);box-shadow:0 0 0 .5rem var(--blue-soft)}
+  @media(prefers-reduced-motion:reduce){.seg{transition:none}}
+
+  /* ---------- tab 2 ---------- */
+  .subtabs{
+    position:sticky;top:var(--nav);z-index:40;
+    background:rgba(255,255,255,.97);backdrop-filter:blur(8px);
+    display:flex;gap:.4rem;flex-wrap:wrap;
+    padding:.8rem 0 .9rem;margin-bottom:2rem;border-bottom:1px solid var(--rule);
+  }
+  .subtabs button{
+    background:#fff;border:1px solid var(--rule);border-radius:999px;cursor:pointer;
+    font-family:"Poppins",sans-serif;font-size:.84rem;font-weight:500;color:var(--mute);
+    padding:.45rem 1rem;
+  }
+  .subtabs button:hover{border-color:var(--blue);color:var(--navy)}
+  .subtabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff;font-weight:600}
+  .sp{padding-bottom:6rem}
+  .sp[hidden]{display:none!important}
+  @media(min-width:1000px){.sp{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}}
+
+  .strategy h3{font-size:1.15rem;margin-bottom:.9rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.4rem}
+  .chip{
+    font-family:"Poppins",sans-serif;font-size:.71rem;font-weight:600;letter-spacing:.03em;
+    background:var(--blue-soft);color:var(--navy);padding:.32rem .7rem;border-radius:999px;
+  }
+  .chip.alt{background:var(--sand);color:#5C4B30}
+  .strategy dl{margin:0}
+  .strategy dt{
+    font-family:"Poppins",sans-serif;font-size:.67rem;font-weight:600;
+    letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-top:1.05rem;
+  }
+  .strategy dt:first-of-type{margin-top:0}
+  .strategy dd{margin:.2rem 0 0;font-size:.91rem;line-height:1.58}
+
+  .card{border:1px solid var(--rule);border-radius:10px;padding:1.4rem 1.5rem;box-shadow:0 1px 4px rgba(20,31,92,.06)}
+  .card-head{display:flex;align-items:center;gap:.6rem;padding-bottom:.85rem;margin-bottom:1rem;border-bottom:1px solid var(--rule)}
+  .dot{width:32px;height:32px;border-radius:50%;background:var(--navy);flex:0 0 auto}
+  .dot.person{background:var(--blue)}
+  .card-head .n{font-family:"Poppins",sans-serif;font-weight:600;font-size:.85rem;color:var(--navy);line-height:1.3}
+  .card-head .r{font-size:.75rem;color:var(--mute)}
+  .card p{margin-bottom:.8rem;font-size:.95rem}
+  .card p:last-child{margin-bottom:0}
+  .cta{color:var(--blue);font-weight:500}
+  .sidenote{
+    margin-top:1.1rem;background:#FCFBF9;border:1px dashed var(--sand-deep);border-radius:8px;
+    padding:.8rem .95rem;font-size:.86rem;color:var(--mute);line-height:1.55;
+  }
+  .sidenote b{
+    font-family:"Poppins",sans-serif;font-weight:600;color:var(--navy);display:block;
+    font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.25rem;
+  }
+  .approve{
+    margin-bottom:1rem;background:var(--amber-soft);border:1px solid #EBDCBC;border-radius:8px;
+    padding:.7rem .9rem;font-size:.85rem;color:#7A5A12;line-height:1.5;
+  }
+  .approve b{font-weight:600}
+
+  /* ---------- tab 3 ---------- */
+  .onepager{
+    border:1px solid var(--rule);border-radius:10px;overflow:hidden;
+    box-shadow:0 1px 5px rgba(20,31,92,.07);margin-bottom:3rem;
+  }
+  .op-head{background:var(--navy);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+  .op-head h3{color:#fff;font-size:1rem}
+  .op-head span{font-size:.78rem;opacity:.75;font-family:"Poppins",sans-serif}
+  .op-body{display:block}
+  @media(min-width:900px){.op-body{display:grid;grid-template-columns:300px 1fr}}
+  .op-side{background:var(--sand);padding:1.4rem 1.5rem;border-right:1px solid var(--sand-deep)}
+  .op-main{padding:1.4rem 1.6rem}
+  .blk{margin-bottom:1.5rem}
+  .blk:last-child{margin-bottom:0}
+  .blk-h{
+    font-family:"Poppins",sans-serif;font-size:.67rem;font-weight:600;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem;
+  }
+  .op-side .blk-h{color:#8A6A2C}
+  .blk p{font-size:.88rem;line-height:1.6;margin-bottom:.5rem}
+  .blk p:last-child{margin-bottom:0}
+  .blk .lbl{font-family:"Poppins",sans-serif;font-size:.74rem;font-weight:600;color:var(--navy);display:block;margin-bottom:.1rem}
+  .names{font-size:.83rem;color:var(--mute);margin-top:.5rem;line-height:1.5}
+  .blk ul{margin:0 0 0 1rem;font-size:.87rem;line-height:1.55}
+  .blk li{margin-bottom:.3rem}
+
+  .insight{
+    background:var(--blue-soft);border-radius:8px;padding:1.05rem 1.2rem;margin-bottom:1.5rem;
+  }
+  .insight p{font-family:"Poppins",sans-serif;font-size:1.02rem;font-weight:500;color:var(--navy);line-height:1.4;margin:0}
+  .insight .sub{font-family:"Inter",sans-serif;font-size:.85rem;font-weight:400;color:var(--mute);margin-top:.5rem}
+
+  .three{display:grid;gap:.9rem}
+  @media(min-width:760px){.three{grid-template-columns:repeat(3,1fr)}}
+  .moment{border:1px solid var(--rule);border-radius:8px;padding:.9rem 1rem}
+  .moment .m-h{font-family:"Poppins",sans-serif;font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.15rem}
+  .moment .m-s{font-size:.78rem;color:var(--mute);margin-bottom:.6rem;line-height:1.45}
+  .moment .m-q{font-size:.85rem;line-height:1.55;color:var(--ink);border-left:2px solid var(--blue);padding-left:.65rem}
+  .moment.key{border-color:var(--blue);background:#FAFCFF}
+
+  .objs{display:grid;gap:.75rem}
+  @media(min-width:760px){.objs{grid-template-columns:repeat(3,1fr)}}
+  .obj{background:#FBFAF8;border:1px solid var(--rule);border-radius:8px;padding:.85rem .95rem}
+  .obj .o-q{font-family:"Poppins",sans-serif;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.35rem;line-height:1.4}
+  .obj .o-a{font-size:.85rem;line-height:1.55;color:var(--mute)}
+
+  .gold{background:#fff;border:1px solid var(--sand-deep);border-radius:8px;padding:.95rem 1.05rem}
+  .gold p{font-family:"Poppins",sans-serif;font-size:.92rem;font-weight:500;color:var(--navy);line-height:1.45;margin:0}
+
+  .op-foot{border-top:1px solid var(--rule);padding:.95rem 1.6rem;background:#FCFBF9;display:flex;gap:2rem;flex-wrap:wrap;align-items:baseline}
+  .op-foot .blk-h{margin-bottom:0}
+  .op-foot p{font-size:.86rem;color:var(--mute);margin:0}
+
+  .email-card{border:1px solid var(--rule);border-radius:10px;padding:1.3rem 1.5rem;max-width:720px;box-shadow:0 1px 4px rgba(20,31,92,.06);margin-bottom:3.5rem}
+  .email-card h4{font-size:.95rem;margin-bottom:.15rem}
+  .email-card .sub{font-size:.83rem;color:var(--mute);margin-bottom:1rem}
+  .email-card .subj{font-size:.9rem;padding:.55rem .8rem;background:var(--sand);border-radius:6px;margin-bottom:.9rem}
+  .email-card .subj b{font-family:"Poppins",sans-serif;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);display:block;margin-bottom:.15rem;font-weight:600}
+  .email-card .body p{font-size:.89rem;line-height:1.65;margin-bottom:.8rem}
+  .email-card .body p:last-child{margin-bottom:0}
+  .email-card .body .eh{
+    font-family:"Poppins",sans-serif;font-size:.78rem;font-weight:600;color:var(--navy);
+    margin-bottom:.15rem;
+  }
+  .email-card .body .lk{color:var(--blue);border-bottom:1px solid rgba(15,98,214,.35)}
+
+  .comment-wrap{border-top:1px solid var(--rule);padding-top:1.8rem;margin-bottom:6rem}
+  .comment-wrap h3{font-size:1.05rem;margin-bottom:.3rem}
+  .comment-wrap .cap{font-size:.85rem;color:var(--mute);margin-bottom:1.4rem}
+  .comments{display:grid;gap:1.2rem}
+  @media(min-width:900px){.comments{grid-template-columns:repeat(2,1fr)}}
+  .cmt{border-left:3px solid var(--amber);padding-left:1rem}
+  .cmt h5{font-family:"Poppins",sans-serif;font-size:.83rem;font-weight:600;color:var(--navy);margin-bottom:.25rem}
+  .cmt p{font-size:.88rem;line-height:1.6;color:var(--mute)}
+
+  /* ---------- tab 4 ---------- */
+  .assess{
+    background:var(--sand);border:1px solid var(--sand-deep);border-radius:10px;
+    padding:1.5rem 1.7rem;margin-bottom:.9rem;
+  }
+  .assess .blk-h{color:#8A6A2C;margin-bottom:.7rem}
+  .assess p{font-size:.93rem;line-height:1.65;margin-bottom:.75rem;max-width:80ch}
+  .assess p:last-child{margin-bottom:0}
+
+  .cal{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:3rem}
+  .cal span{
+    font-family:"Poppins",sans-serif;font-size:.74rem;color:var(--mute);
+    border:1px solid var(--rule);border-radius:999px;padding:.3rem .75rem;white-space:nowrap;
+  }
+  .cal span b{color:var(--navy);font-weight:600}
+
+  .props{border-top:1px solid var(--rule);margin-bottom:6rem}
+  .prop{
+    border-bottom:1px solid var(--rule);padding:1.5rem 0;
+    display:grid;gap:.6rem;align-items:start;
+  }
+  @media(min-width:900px){.prop{grid-template-columns:300px 1fr;gap:3rem}}
+  .prop-h{display:flex;gap:.85rem;align-items:flex-start}
+  .prop-n{
+    width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:var(--navy);color:#fff;
+    display:grid;place-items:center;font-family:"Poppins",sans-serif;font-weight:600;font-size:.82rem;
+  }
+  .prop-h h4{font-size:.95rem;line-height:1.35;padding-top:.22rem}
+  .prop-b p{font-size:.9rem;line-height:1.65;margin-bottom:.55rem}
+  .prop-b p:last-child{margin-bottom:0}
+  .prop-b .buys{
+    display:inline-block;background:var(--blue-soft);color:var(--navy);
+    font-family:"Poppins",sans-serif;font-size:.78rem;font-weight:500;
+    padding:.3rem .75rem;border-radius:999px;
+  }
+  .prop-b .outlets{font-size:.87rem;color:var(--mute);line-height:1.6}
+  .prop-b .outlets b{font-family:"Poppins",sans-serif;font-weight:600;font-size:.7rem;
+    letter-spacing:.09em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.15rem}
+
+  footer{background:var(--sand);border-top:1px solid var(--sand-deep);padding:1.3rem 2rem;text-align:center;color:var(--mute);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="mast-in">
+    <div class="mark">
+      <div class="badge">TLC</div>
+      <div class="mark-txt">MARKETING EXECUTIVE <em>CASE STUDY</em></div>
+    </div>
+    <div class="who">Andrea Colella</div>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-in" role="tablist" id="tabs">
+    <button role="tab" data-p="p1" aria-selected="true"><span>01</span>Adapting the content</button>
+    <button role="tab" data-p="p2" aria-selected="false"><span>02</span>LinkedIn post cascading</button>
+    <button role="tab" data-p="p3" aria-selected="false"><span>03</span>Go to sales</button>
+    <button role="tab" data-p="p4" aria-selected="false"><span>04</span>Events &amp; media</button>
+  </div>
+</nav>
+
+<!-- ================= 01 ================= -->
+<section class="panel" id="p1">
+  <div class="wrap">
+    <div class="intro">
+      <h1>Adapting the content: what's changed</h1>
+      <p>Adaptation axis and rationale</p>
+    </div>
+
+    <div class="scrolly">
+      <div class="notes-col">
+        <div class="notes-inner">
+
+          <div class="note on" data-note="s1"><div class="note-card">
+            <div class="step">01 — Title</div>
+            <h3>A borrowed metaphor</h3>
+            <dl>
+              <dt>Original</dt>
+              <dd>"Quiet Quitting: Why Telecom Customers Check Out Before They Churn"</dd>
+              <dt>Problem</dt>
+              <dd>The term is known in Italy but sits in HR language, where it describes employees doing the bare minimum. Applied to customers it only lands for a reader already holding the English original in mind.</dd>
+              <dt>Decision</dt>
+              <dd>Replaced with an Italian line that states the thesis outright: the cancellation is the last act, not the first. It keeps the promise of the headline and drops the dependency on a loan word.</dd>
+            </dl>
+          </div></div>
+
+          <div class="note" data-note="s2"><div class="note-card">
+            <div class="step">02 — Spokesperson quote</div>
+            <h3>Authority has to be local</h3>
+            <dl>
+              <dt>Original</dt>
+              <dd>TLC Worldwide North America's CEO, speaking on a US podcast alongside former Verizon and AT&amp;T executives.</dd>
+              <dt>Problem</dt>
+              <dd>For an Italian reader the podcast carries no recognition and the names carry no weight. The passage spends credibility rather than building it.</dd>
+              <dt>Decision</dt>
+              <dd>Francesca Moroni takes the interpretive role, as the voice of the business in this market. The podcast reference is dropped rather than translated.</dd>
+            </dl>
+            <div class="flag"><b>Approval.</b> The quote is a placeholder, written to show register and placement. It needs to be extracted in a short interview and signed off before publication.</div>
+          </div></div>
+
+          <div class="note" data-note="s3"><div class="note-card">
+            <div class="step">03 — Pain point</div>
+            <h3>Quality vs cost</h3>
+            <dl>
+              <dt>Original thesis</dt>
+              <dd>Networks became excellent, so differentiation moved to how a brand makes people feel.</dd>
+              <dt>Problem</dt>
+              <dd>In Italy the network was never the battleground. Price has been for years, and still is.</dd>
+              <dt>Decision</dt>
+              <dd>The rhetorical structure stays and the lever is swapped. Price is still the field everyone competes on — and it no longer separates one operator from another.</dd>
+            </dl>
+          </div></div>
+
+          <div class="note" data-note="s4"><div class="note-card">
+            <div class="step">04 — Numbers</div>
+            <h3>A local credible source</h3>
+            <dl>
+              <dt>Original</dt>
+              <dd>$150bn invested in 5G, $6,000 lifetime value, $4bn in lost revenue, $1,000 replacement cost.</dd>
+              <dt>Problem</dt>
+              <dd>Italian ARPU sits an order of magnitude below. In front of an Italian telco marketing director those figures end the piece's credibility within a paragraph.</dd>
+              <dt>Decision</dt>
+              <dd>Every figure replaced with AGCOM data. In this market the regulator carries more weight than any private research house, so the swap upgrades the source rather than simply localising it.</dd>
+            </dl>
+            <div class="flag"><b>Verified AGCOM data.</b></div>
+          </div></div>
+
+          <div class="note" data-note="s5"><div class="note-card">
+            <div class="step">05 — Cases</div>
+            <h3>Proof the reader can click on</h3>
+            <dl>
+              <dt>Original</dt>
+              <dd>T-Mobile Tuesdays, plus a US churn figure used as a cautionary example.</dd>
+              <dt>Problem</dt>
+              <dd>The references are not relevant for the Italian market.</dd>
+              <dt>Decision</dt>
+              <dd>Use TLC's own success with Three+ — gold at the International Loyalty Awards — followed by two Italian telco cases.</dd>
+              <dt>Why consistency</dt>
+              <dd>With client numbers uncleared, sustained consistency is the strongest proof available — and it's what the cases evidence.</dd>
+            </dl>
+            <div class="flag"><b>Client sign-off.</b> Naming clients in public content requires their permission — a right negotiated at contract stage, not once the project has closed.</div>
+          </div></div>
+
+          <div class="note" data-note="s6"><div class="note-card">
+            <div class="step">06 — What stayed</div>
+            <h3>Left untouched</h3>
+            <dl>
+              <dt>Kept</dt>
+              <dd>The loyalty penalty, the acquisition hamster wheel, the distinction between a programme and a feeling, the invisible-window section and the five closing questions.</dd>
+              <dt>Why</dt>
+              <dd>None of them rests on a US-specific fact. They describe a dynamic that behaves the same way in any subscription market.</dd>
+            </dl>
+          </div></div>
+
+        </div>
+      </div>
+
+      <div class="doc-scroll">
+        <div class="doc">
+          <div class="doc-title seg" id="s1">La disdetta è l'ultimo atto, non il primo: perché i clienti del settore telecomunicazioni ti lasciano</div>
+
+          <p>Il momento più costoso nel settore telecomunicazioni non è quando un cliente se ne va. Avviene mesi prima, quando silenziosamente smette di sentirsi parte del brand.</p>
+
+          <p>In Italia, la rete non è più il fattore determinante da qualche anno. Adesso, è il prezzo. Le infrastrutture ci sono e i servizi crescono, eppure secondo i dati AGCOM il ricavo medio per SIM è passato da 129 a 125,6 euro all'anno nel 2025. Certo, il mercato rimane molto movimentato, con quasi 7 milioni di operazioni di portabilità in un anno, ma il dato che emerge descrive qualcosa di più scomodo della disdetta: il cliente che resta vale meno ogni anno.</p>
+
+          <blockquote class="seg" id="s2">"Il churn viene riportato spesso come un numero dentro un report. Ma quel numero non è nato lì: è nato molto prima, in decine di momenti che nessuno stava guardando" ha affermato Francesca Moroni, Managing Director Italy di TLC Worldwide. "Quando un cliente sta confrontando le offerte, la decisione l'ha già presa mesi prima. Il lavoro vero è in quella finestra, ed è lì che è importante essere attenti".</blockquote>
+
+          <h4>Quando la sufficienza non è più sufficiente</h4>
+
+          <p class="seg" id="s3">Se prima il prezzo era un buon motivo per scegliere, adesso non lo è più. Non è diventato irrilevante, ma si è appiattito tra tutti gli operatori. La competizione sulle tariffe è talmente estesa da coinvolgere l'intero mercato. E quando chiunque può offrire una tariffa conveniente, il prezzo smette di essere un motivo per scegliere.</p>
+
+          <p>Quello che può fare davvero la differenza è il modo in cui un brand fa sentire i propri clienti: se percepiscono che il loro operatore dà valore alla loro scelta, li tratta in modo equo e investe nella relazione tanto quanto loro investono nei suoi servizi.</p>
+
+          <p>È una sfida ben diversa dal calibrare i prezzi. Le aziende del settore, per loro natura, sono da sempre orientate sull'ingegneria e la tecnologia: è il loro core business. Ma esattamente come accade in altri settori, anche loro si devono evolvere verso un modello in cui l'esperienza del cliente conta quanto il servizio offerto. È proprio in questo scarto che si annida il churn.</p>
+
+          <p>Un esempio evidente di questo divario è il fenomeno noto come loyalty penalty, il modo in cui gli operatori gestiscono le offerte per acquisire i nuovi clienti. I nuovi clienti ricevono le promozioni più vantaggiose e accattivanti, con offerte sui dispositivi e prezzi di ingresso pensati per convincerli a cambiare operatore. Nel frattempo, i clienti esistenti assistono a queste dinamiche senza poterne usufruire, abbracciando l'idea che il brand sia più interessato ad attrarre nuove persone che a trattenere quelle che già lo hanno scelto.</p>
+
+          <h4>Il problema da 1 miliardo di dollari</h4>
+
+          <p class="seg" id="s4">I dati ufficiali raccontano questo problema in modo più concreto. Con 7 milioni di utenti che hanno richiesto la portabilità nel 2025 e un ricavo medio annuo di 125,6 euro per SIM, ogni anno passano di mano 880 milioni di euro in ricavi. È la dimensione reale del valore che si muove e che non viene presidiata.</p>
+
+          <p>Eppure gli investimenti del settore telecomunicazioni rimangono orientati all'acquisizione, e il motivo è comprensibile perché il ritorno è immediato e facilmente misurabile. Lanci una promozione il venerdì, vedi i risultati già lunedì. Ed è proprio questo 'qui ed ora' che impedisce di vedere il problema alla radice: ogni euro investito in offerte d'ingresso rende il brand sempre più dipendente dalle nuove acquisizioni. E si entra in un circolo vizioso.</p>
+
+          <p>I benefici della loyalty, d'altra parte, sono più lenti e più difficili da attribuire a una singola iniziativa. Per interrompere il circolo è necessario costruire nel tempo una relazione abbastanza solida da controbilanciare anche gli aumenti di prezzo e incentivare il cliente a rimanere anche quando le condizioni sono meno favorevoli.</p>
+
+          <h4>Come riconoscere un programma di loyalty che funziona</h4>
+
+          <p>Gran parte di quelli che vengono chiamati programmi di loyalty sono, in realtà, strumenti di acquisizione a cui è stata aggiunta una coda di retention. La loyalty però non si manifesta solo in un programma, ma nell'insieme delle esperienze che portano un cliente a voler restare anche quando gli viene offerto un valido motivo per andarsene.</p>
+
+          <p class="seg" id="s5">Three+, un programma realizzato con VodafoneThree nel Regno Unito, si è basato proprio su questa chiave di lettura. Uno Specialty Coffee a una sterlina una volta a settimana, un cinema a tre sterline. Niente di clamoroso, ma qualcosa su cui i clienti potevano contare ogni settimana e che si innestava perfettamente nelle loro vite. Partendo da un abbonamento mobile. Con Three+, lo scambio di valore si è spostato da quanto i clienti pagavano a quanto ricevevano. Un gesto piccolo ma sempre presente è riuscito a costruire un'abitudine, e l'abitudine costruisce attaccamento.</p>
+
+          <p>Club+10 di Sky Italia lavora esattamente su questa costanza, e prima ancora liveFAST aveva fatto la stessa cosa con Fastweb. Non sono programmi che hanno lasciato il segno grazie a un'iniziativa memorabile, ma lo hanno fatto perché hanno tenuto un ritmo. Quando un brand interrompe all'improvviso un ritmo, una cadenza a cui ha abituato i suoi clienti, il contatto emotivo ne risente e il rapporto costruito in anni si deteriora.</p>
+
+          <h4>Il distacco graduale e silenzioso</h4>
+
+          <p class="seg" id="s6">Il churn non funziona necessariamente come gli operatori lo misurano. La decisione di andarsene viene maturata mesi prima di quando viene attuata, in un momento indefinito tra quando un cliente si sente poco considerato e quando agisce preso dalla frustrazione.</p>
+
+          <p>Una rimodulazione comunicata male. Un disservizio che dura troppo a lungo. Certo, presi singolarmente questi episodi sono lontani dall'essere decisivi, ma sommati nel tempo il loro effetto si accumula. Quando un cliente arriva a confrontare le offerte della concorrenza, molto spesso ha già deciso che se ne andrà. Sta solo cercando un'alternativa.</p>
+
+          <p>La vera opportunità sta nella fase iniziale di questo processo graduale: quando il cliente avverte un distacco, ma non tanto da farlo allontanare. Intervenire con qualcosa di tempestivo e rilevante prima che la frustrazione si trasformi in una decisione presa può trasformare un momento di rischio in un'opportunità per rinforzare la fiducia.</p>
+
+          <p>È qui che i programmi di loyalty più efficaci intervengono in modo proattivo, individuando i momenti del customer journey che hanno un impatto maggiore sulla percezione del brand. Quasi nessun programma è ancora progettato per intercettare questa finestra, ma i dati per farlo esistono e la capacità di trasformarli in azioni concrete è a portata di mano.</p>
+
+          <h4>Una conversazione onesta</h4>
+
+          <p>Da dove si inizia per rompere il circolo vizioso? Mettete in una stanza una persona per ogni team coinvolto nel customer lifecycle. Mappate cosa rappresenta il vostro brand, qual è il vostro valore aggiunto, e chiedetevi cosa conta davvero per i vostri clienti in ogni fase.</p>
+
+          <p>Poi provate a rispondere a queste domande senza riserve:</p>
+          <ul>
+            <li>Come migliorare concretamente la service experience in tutti i nostri touchpoint?</li>
+            <li>Come strutturare momenti ricorrenti e riconoscibili che facciano sentire i nostri clienti valorizzati, settimana dopo settimana?</li>
+            <li>I vantaggi del nostro programma rispondono davvero alle esigenze dei nostri clienti?</li>
+            <li>Ci sono dei momenti chiave che possiamo valorizzare per avvicinare i clienti al nostro brand?</li>
+            <li>Quanto ci costa sostituire un cliente che avremmo potuto fidelizzare?</li>
+          </ul>
+
+          <p>L'obiettivo di questa conversazione non deve essere quello di impedire ai clienti di andarsene. Ma costruire un brand che i clienti scelgono di continuare a scegliere.</p>
+
+          <p>È da queste domande che partiamo in TLC. Aiutiamo i brand a capire cosa conta davvero per i loro clienti e, partendo proprio da questi dati, sviluppiamo programmi di loyalty ed engagement capaci di costruire una relazione più solida e duratura con i clienti.</p>
+
+          <p>Se stai affrontando un problema di churn o ti riconosci in una delle situazioni che abbiamo descritto, parliamone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 ================= -->
+<section class="panel" id="p2" hidden>
+  <div class="wrap">
+    <div class="intro">
+      <h1>LinkedIn post cascading</h1>
+      <p>Three different posts rather than just three versions of the same one</p>
+    </div>
+
+    <div class="subtabs" role="tablist" id="subtabs">
+      <button role="tab" data-s="lp1" aria-selected="true">Post 1 — Discovery</button>
+      <button role="tab" data-s="lp2" aria-selected="false">Post 2 — Engage</button>
+      <button role="tab" data-s="lp3" aria-selected="false">Post 3 — Credibility</button>
+      <button role="tab" data-s="lp4" aria-selected="false">Bonus</button>
+      <button role="tab" data-s="lp5" aria-selected="false">Measurement</button>
+    </div>
+
+    <!-- POST 1 -->
+    <div class="sp" id="lp1">
+      <div class="strategy">
+        <h3>Reframing a problem the reader hasn't named</h3>
+        <div class="chips">
+          <span class="chip">Discovery</span><span class="chip">Problem reframing</span>
+          <span class="chip alt">Carousel</span><span class="chip alt">Company page</span>
+        </div>
+        <dl>
+          <dt>Reader</dt>
+          <dd>Believes they have a churn problem and is measuring the exit. They haven't yet considered the months that precede it.</dd>
+          <dt>Job</dt>
+          <dd>Reframe rather than inform. This is commercial insight: the post has to change how the reader defines the problem before any solution becomes credible.</dd>
+          <dt>Why a carousel</dt>
+          <dd>A reframe needs room to unfold. The document format holds attention across several beats and gets saved, which is the behaviour that matters at this stage.</dd>
+          <dt>Slide structure</dt>
+          <dd>1 · The cancellation is the last act, not the first<br>
+              2 · What the operator sees — a request, a date, a number in a report<br>
+              3 · What actually happened — the sequence in the months before<br>
+              4 · Why it stays invisible — small, spread out, none decisive alone<br>
+              5 · The window between disengagement and departure<br>
+              6 · Where a loyalty programme should be operating</dd>
+          <dt>Key visual</dt>
+          <dd>The timeline running across slides 2 and 3 — the same story seen from both sides. That's the slide that earns the save.</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-head"><div class="dot"></div><div><div class="n">TLC Worldwide Italia</div><div class="r">Company page</div></div></div>
+          <p>Il momento più costoso per un operatore telco non è quando un cliente disdice.</p>
+          <p>È mesi prima. Quando smette di aspettarsi qualcosa.</p>
+          <p>Un cliente che se ne va non ha preso quella decisione nel momento in cui ha chiesto la portabilità. L'ha presa molto tempo prima, in una serie di momenti che nessuno stava misurando: una rimodulazione comunicata male, un'assistenza che si è trascinata, la promozione riservata a chi arriva e non a chi è rimasto.</p>
+          <p>Nessuno di questi episodi, da solo, fa cambiare operatore. Sommati, sì.</p>
+          <p>Il problema è che quando il churn diventa un numero dentro un report, quella finestra è già chiusa. Si misura l'uscita, non il distacco che l'ha preceduta.</p>
+          <p>Nel nuovo articolo abbiamo guardato cosa succede in quello spazio — e perché è lì che i programmi di loyalty dovrebbero lavorare, invece che all'ultimo atto.</p>
+          <p class="cta">👉 Link nel primo commento</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 2 -->
+    <div class="sp" id="lp2" hidden>
+      <div class="strategy">
+        <h3>Naming the pain, then pricing it</h3>
+        <div class="chips">
+          <span class="chip">Engage</span><span class="chip">Agitate</span>
+          <span class="chip alt">Static post</span><span class="chip alt">Company page</span>
+        </div>
+        <dl>
+          <dt>Reader</dt>
+          <dd>Already senses something is wrong but hasn't named the cause. The loyalty penalty is the most legible symptom of the gap, not its root.</dd>
+          <dt>Job</dt>
+          <dd>Move from recognition to discomfort. Naming the pain isn't enough, you have to quantify what it costs.</dd>
+          <dt>Why the CTA asks for an opinion</dt>
+          <dd>Most readers aren't in-market, so a "let's talk" is asked too early and gets ignored. A question generates the comments the post needs, and the engagement ask stays in the article where it already sits.</dd>
+          <dt>Visual</dt>
+          <dd>One comparison only — what a new customer receives versus a fifth-year customer. Two columns, nothing else. The ARPU figure stays in the copy: a single number inside an image reads badly in feed.</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-head"><div class="dot"></div><div><div class="n">TLC Worldwide Italia</div><div class="r">Company page</div></div></div>
+          <p>Le offerte migliori degli operatori non sono per chi è già cliente. Sono per chi ancora deve diventarlo.</p>
+          <p>Si chiama loyalty penalty, e nel mercato italiano è diventata una regola: promozioni sui dispositivi, prezzi d'ingresso, incentivi pensati per far cambiare idea a qualcun altro. Mentre chi è rimasto guarda, e trae la conclusione più ovvia.</p>
+          <p>Non è una questione di equità. È una questione di quanto costa.</p>
+          <p>Il ricavo medio per SIM in Italia è passato da 129 a 125,6 euro all'anno. Ogni euro investito per convincere qualcuno a cambiare operatore rende il brand più dipendente dal round successivo di offerte. È un circolo che non si ferma da solo.</p>
+          <p>Curiosi di sapere come la vedete: nel vostro settore, quanto pesa davvero il cliente che resta rispetto a quello che arriva? E quanto di questo si vede nel budget?</p>
+          <p class="cta">👉 Leggi l'articolo in evidenza</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST 3 -->
+    <div class="sp" id="lp3" hidden>
+      <div class="strategy">
+        <h3>Lending credibility through a person</h3>
+        <div class="chips">
+          <span class="chip">Engage</span><span class="chip">Credibility</span>
+          <span class="chip alt">Plain text</span><span class="chip alt">Personal profile</span>
+        </div>
+        <dl>
+          <dt>A different axis</dt>
+          <dd>Posts 1 and 2 vary by the reader's stage of awareness. This one varies by who is speaking, which is a separate dimension altogether.</dd>
+          <dt>Why it works</dt>
+          <dd>Source credibility: persuasion depends on the perceived expertise and trustworthiness of the speaker, and a company page has a declared interest in selling. The same argument carries further from a named person.</dd>
+          <dt>No asset, deliberately</dt>
+          <dd>Plain text, no link in the body, no hashtags, no call to action. Package it and it reads as the brand in disguise again — which removes the only reason this post exists.</dd>
+          <dt>Distribution</dt>
+          <dd>The article link goes in a comment. Advocacy is handled in the first ninety minutes: colleagues comment by adding a point or an example.</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="approve"><b>Draft for approval.</b> Proposed content and register for a first-person post. To be extracted and signed off before publication.</div>
+        <div class="card">
+          <div class="card-head"><div class="dot person"></div><div><div class="n">Francesca Moroni</div><div class="r">Managing Director Italy, TLC Worldwide</div></div></div>
+          <p>Quasi tutte le conversazioni che ho sul churn iniziano da un numero.</p>
+          <p>Un numero preciso, anche in un report ben fatto, che dice quanti clienti se ne sono andati nell'ultimo trimestre. Il problema di quel numero è che arriva puntualmente tardi.</p>
+          <p>Perché non è lì che la decisione prende forma. Si è formata mesi prima, in momenti che nessuno stava misurando e che presi uno a uno sembravano tutti trascurabili.</p>
+          <p>È la parte del lavoro che trovo più interessante, e anche la più scomoda da portare in una riunione: dire a un'azienda che il problema non è dove lo sta cercando.</p>
+          <p>Quando un cliente sta confrontando le offerte della concorrenza, in genere ha già deciso. Sta solo cercando l'alternativa.</p>
+          <p>Il lavoro vero sta prima. In quella finestra che quasi nessun programma è progettato per vedere — anche se i dati per vederla, di solito, ci sono già.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS -->
+    <div class="sp" id="lp4" hidden>
+      <div class="strategy">
+        <h3>The closing questions are already a format</h3>
+        <div class="chips">
+          <span class="chip">Convert</span>
+          <span class="chip alt">Carousel or gated checklist</span><span class="chip alt">Company page</span>
+        </div>
+        <dl>
+          <dt>The idea</dt>
+          <dd>The five questions that close the article are a self-assessment, not a conclusion. Turned into a carousel — or a checklist behind a form — they become the one asset in this set that can actually collect a contact.</dd>
+          <dt>Why it closes the loop</dt>
+          <dd>The three captions create demand and none of them captures it. This piece does, and it costs almost nothing to produce because the content already exists.</dd>
+          <dt>Timing</dt>
+          <dd>January or September, when retention budgets and plans are reopened.</dd>
+          <dt>Worth testing</dt>
+          <dd>Mirror carousels — the same window told from the operator's side and from the customer's, published a few days apart. It gets commented on because the reader recognises themselves in one of the two.</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-head"><div class="dot"></div><div><div class="n">Self-assessment carousel</div><div class="r">Five questions, one per slide</div></div></div>
+          <p><b>1.</b> Come migliorare concretamente la service experience in tutti i nostri touchpoint?</p>
+          <p><b>2.</b> Come strutturare momenti ricorrenti che facciano sentire i clienti valorizzati, settimana dopo settimana?</p>
+          <p><b>3.</b> I vantaggi del nostro programma rispondono davvero alle esigenze dei nostri clienti?</p>
+          <p><b>4.</b> Ci sono momenti chiave che possiamo valorizzare per avvicinare i clienti al brand?</p>
+          <p><b>5.</b> Quanto ci costa sostituire un cliente che avremmo potuto fidelizzare?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEASUREMENT -->
+    <div class="sp" id="lp5" hidden>
+      <div class="strategy">
+        <h3>Three jobs, three measures</h3>
+        <dl>
+          <dt>Principle</dt>
+          <dd>An organic post builds memory rather than leads. Judging these three on lead generation would mean measuring demand creation with capture metrics, which is how good content gets cut.</dd>
+          <dt>Post 1 — reach and saves</dt>
+          <dd>The job is memory. A saved carousel is worth more than a reaction: it signals an intention to come back to it.</dd>
+          <dt>Post 2 — comments and their quality</dt>
+          <dd>The job is problem recognition. If people argue about it in the comments, the pain landed.</dd>
+          <dt>Post 3 — who, not how many</dt>
+          <dd>Three loyalty managers from target accounts under that post are worth more than two hundred generic reactions. It's the only one where the identity of the audience is the metric.</dd>
+          <dt>What none of them is</dt>
+          <dd>None of the three is intended as a conversion post, and that is deliberate.</dd>
+        </dl>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 ================= -->
+<section class="panel" id="p3" hidden>
+  <div class="wrap">
+    <div class="intro">
+      <h1>Go to sales</h1>
+      <p>A rep doesn't need content. They need a reason to contact a specific person, and a line to say. So the deliverable isn't the article — it's who to send it to, how to open, and what to ask next.</p>
+    </div>
+    <div class="onepager">
+      <div class="op-head">
+        <h3>Sales brief — "La disdetta è l'ultimo atto, non il primo"</h3>
+        <span>Internal use only · one screen</span>
+      </div>
+
+      <div class="op-body">
+        <div class="op-side">
+          <div class="blk">
+            <div class="blk-h">Who</div>
+            <p><span class="lbl">The company</span>Any business where the customer pays on a recurring basis and the renewal is silent. Telecoms, utilities, insurance, banking, pay-TV and streaming, subscription retail and fitness.</p>
+            <p class="names">Iliad · Fastweb · Sky · A2A · Sorgenia · Virgin Active</p>
+            <p style="margin-top:.9rem"><span class="lbl">The person</span>Whoever answers for churn and retention, or owns the customer base. Not brand — brand finds this interesting and files it.</p>
+          </div>
+
+          <div class="blk">
+            <div class="blk-h">Who not</div>
+            <ul>
+              <li>Accounts already in an active proposal stage</li>
+              <li>One-off purchase businesses with no renewal moment</li>
+              <li>Anyone we contacted in the last three weeks</li>
+            </ul>
+          </div>
+
+          <div class="blk">
+            <div class="blk-h">Gold question</div>
+            <div class="gold"><p>"When a customer leaves you, how far back can you see? Do you know what was happening three months earlier?"</p></div>
+          </div>
+        </div>
+
+        <div class="op-main">
+          <div class="blk">
+            <div class="blk-h">What — the insight</div>
+            <div class="insight">
+              <p>Customers decide to leave months before they act on it. By the time churn appears in a report, the window has already closed.</p>
+              <p class="sub">Supporting line: in Italy the price war has made the customer who stays worth less every year.</p>
+            </div>
+          </div>
+
+          <div class="blk">
+            <div class="blk-h">When — three moments</div>
+            <div class="three">
+              <div class="moment">
+                <div class="m-h">Cold</div>
+                <div class="m-s">Open on their KPI, not on us.</div>
+                <div class="m-q">"Most retention reporting measures the exit. The decision happens months earlier — we looked at what sits in that gap in the Italian market."</div>
+              </div>
+              <div class="moment">
+                <div class="m-h">Recall</div>
+                <div class="m-s">Engaged once, then went quiet.</div>
+                <div class="m-q">"You mentioned [their priority] last time we spoke. This is the data version of that conversation — AGCOM figures on what's happening to customer value in Italy."</div>
+              </div>
+              <div class="moment key">
+                <div class="m-h">Stalled deal</div>
+                <div class="m-s">A reason to write that isn't a nudge.</div>
+                <div class="m-q">"Not chasing. This came out and it speaks directly to what we were discussing. Curious whether the window it describes is something you can already see in your own data."</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blk">
+            <div class="blk-h">What if</div>
+            <div class="objs">
+              <div class="obj">
+                <div class="o-q">"My prospect isn't a telco."</div>
+                <div class="o-a">The mechanic is any recurring-revenue business. Open on their KPI and use the telco data as evidence, not as the subject.</div>
+              </div>
+              <div class="obj">
+                <div class="o-q">"I'd rather send a case than an article."</div>
+                <div class="o-a">A case answers a question they've already asked. This one gets them to ask it. Send the case second, once there's a conversation to attach it to.</div>
+              </div>
+              <div class="obj">
+                <div class="o-q">"I want to share something more product-focused."</div>
+                <div class="o-a">Product material tells them what we sell. This tells them they have a problem worth solving — and nobody reads a solution before accepting the problem.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="op-foot">
+        <div class="blk-h">Tracking</div>
+        <p>Use your own link, not the public URL. Log the send on the opportunity record where one exists.</p>
+      </div>
+    </div>
+
+    <div class="email-card">
+      <h4>Second element — internal email</h4>
+      <div class="sub">Sent individually, one per rep, each carrying their own link.</div>
+      <div class="subj"><b>Subject</b>A reason to reopen the deals that went quiet</div>
+      <div class="body">
+        <p>Hi [name],</p>
+        <p>We've put together a new piece that's ready to use. It looks at why customers disengage months before they actually cancel, and why the churn figure in a quarterly report almost always arrives too late to act on.</p>
+        <p class="eh">Who it's for</p>
+        <p>Anyone who answers for retention — loyalty, CRM, customer base, marketing leads — in telco, utilities, insurance, banking, pay-TV and subscription retail.</p>
+        <p class="eh">In a nutshell</p>
+        <p>The decision to leave isn't taken at the moment of cancellation — it builds over months of small signals nobody is measuring. If you're looking for a way in: when a customer leaves you, how far back can you see?</p>
+        <p>Here's the link: <span class="lk">[Link]</span></p>
+        <p>Whenever you use it, please make sure it's logged in the system.</p>
+        <p>Thanks,<br>Andrea</p>
+      </div>
+    </div>
+
+    <div class="comment-wrap">
+      <h3>Behind the choices</h3>
+      <div class="comments">
+        <div class="cmt">
+          <h5>Why reactivation leads</h5>
+          <p>Every rep has deals that went quiet and no decent reason to write again. This gives them one that doesn't read as a nudge. It's the highest-value use of the asset and the one nobody plans for.</p>
+        </div>
+        <div class="cmt">
+          <h5>Why the exclusion list exists</h5>
+          <p>Telling a rep who not to contact is what makes the rest of the page credible. A brief that only says yes reads as marketing pushing volume, and gets treated accordingly.</p>
+        </div>
+        <div class="cmt">
+          <h5>Why external objections aren't here</h5>
+          <p>"We already have a loyalty programme", "not now, we're mid-budget", "our churn is under control" are prospect objections. They belong in a battle card, and a battle card gets written after hearing what prospects actually say in live deals — not at a desk.</p>
+        </div>
+        <div class="cmt">
+          <h5>How the tracking would actually work</h5>
+          <p>Two options depending on the stack: host the asset in the CRM so downloads are recorded against the record, or log the send on the opportunity — which is what makes influenced pipeline measurable later. The per-rep link is the fallback that works anywhere and asks nothing extra of the rep.</p>
+        </div>
+        <div class="cmt">
+          <h5>The threshold</h5>
+          <p>If nobody has sent it within three weeks, the problem isn't the sales team. The material didn't serve, and it gets retired rather than reissued.</p>
+        </div>
+        <div class="cmt">
+          <h5>Why one email each</h5>
+          <p>Five near-identical emails rather than one to the group. An email addressed to me gets read; an email to the group gets read by someone else. It also makes the per-rep link work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="p4" hidden>
+  <div class="wrap">
+    <div class="intro">
+      <h1>Positioning: events &amp; media</h1>
+      <p>Five priorities to position Francesca and TLC in the Italian market — and the reasoning behind each.</p>
+    </div>
+
+    <div class="assess">
+      <div class="blk-h">Assessment</div>
+      <p>The industry presence that emerges from the profiles is concentrated in a single stretch of the year, roughly September to December.</p>
+      <p>Those events are built around being at the table, and the risk is that they do little more than draw attention to the brand. Keeping the same moments, there is room to build association and access as well.</p>
+      <p>Beyond that, the proposal aims to extend the visibility of the brand and of the Italian spokesperson past that period of high concentration.</p>
+    </div>
+
+    <div class="cal">
+      <span><b>15 Oct</b> · Osservatorio Fedeltà, Parma</span>
+      <span><b>28–29 Oct</b> · Intersections</span>
+      <span><b>11–12 Nov</b> · Forum Retail</span>
+    </div>
+
+    <div class="props">
+
+      <div class="prop">
+        <div class="prop-h">
+          <div class="prop-n">1</div>
+          <h4>Osservatorio Fedeltà</h4>
+        </div>
+        <div class="prop-b">
+          <p>Work the Platinum Partner agreement towards a contribution to the White Paper using TLC's own proprietary data, and towards access to the guest list. Stage visibility is already part of the agreement.</p>
+        </div>
+      </div>
+
+      <div class="prop">
+        <div class="prop-h">
+          <div class="prop-n">2</div>
+          <h4>Editorial formats</h4>
+        </div>
+        <div class="prop-b">
+          <p>Forum Retail and Intersections both run their own editorial space — a podcast — where they hand the floor to key voices.</p>
+          <p><span class="buys">Buys attention that outlives the day</span></p>
+          <p>The episode is an asset by construction.</p>
+        </div>
+      </div>
+
+      <div class="prop">
+        <div class="prop-h">
+          <div class="prop-n">3</div>
+          <h4>Executive profiling in tier-one business media</h4>
+        </div>
+        <div class="prop-b">
+          <p>Events and trade press build credibility for the company; they do little for the recognisability of the person who represents it. Profiling works the other way round, and reaches a business audience that never attends a loyalty conference. The objective is to establish Francesca as a named spokesperson with a story of her own, so that her voice carries before the subject matter does.</p>
+          <p>The angle that makes her pitchable to an editor: she sells loyalty and has stayed twenty years in the same company, in a market where managers move every three.</p>
+          <p class="outlets"><b>Outlets that run this kind of piece</b>Fortune Italia (MPW) · Il Sole 24 Ore (Alley Oop) · Corriere della Sera (L'Economia) · Forbes Italia</p>
+        </div>
+      </div>
+
+      <div class="prop">
+        <div class="prop-h">
+          <div class="prop-n">4</div>
+          <h4>An Italian report built on TLC's own redemption data</h4>
+        </div>
+        <div class="prop-b">
+          <p>Tailor and localise the annual proprietary research to pitch selected trade editors.</p>
+          <p class="outlets"><b>Trade editors</b>Engage · Touchpoint · GDOWeek</p>
+        </div>
+      </div>
+
+      <div class="prop">
+        <div class="prop-h">
+          <div class="prop-n">5</div>
+          <h4>Francesca's profile as a platform</h4>
+        </div>
+        <div class="prop-b">
+          <p>A recurring monthly format, fed by the other four.</p>
+          <p><span class="buys">Buys continuity</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>Marketing Executive Case Study · Andrea Colella</footer>
+
+<script>
+(function(){
+  function wire(sel, key, after){
+    var btns = [].slice.call(document.querySelectorAll(sel));
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        btns.forEach(function(x){
+          var on = x === b;
+          x.setAttribute('aria-selected', on ? 'true' : 'false');
+          var t = document.getElementById(x.dataset[key]);
+          if(t){ on ? t.removeAttribute('hidden') : t.setAttribute('hidden',''); }
+        });
+        if(after) after();
+      });
+    });
+  }
+  wire('#tabs button','p', function(){ window.scrollTo(0,0); });
+  wire('#subtabs button','s');
+
+  var scroller = document.querySelector('.doc-scroll');
+  var segs  = [].slice.call(document.querySelectorAll('.seg'));
+  var notes = [].slice.call(document.querySelectorAll('.note'));
+  function activate(id){
+    notes.forEach(function(n){ n.classList.toggle('on', n.dataset.note === id); });
+    segs.forEach(function(s){ s.classList.toggle('live', s.id === id); });
+  }
+  if (scroller && window.innerWidth >= 1000){
+    var queued = false;
+    function update(){
+      queued = false;
+      var line = scroller.getBoundingClientRect().top + scroller.clientHeight * 0.34;
+      var active = segs.length ? segs[0].id : null;
+      segs.forEach(function(s){
+        if (s.getBoundingClientRect().top <= line) active = s.id;
+      });
+      if (active) activate(active);
+    }
+    scroller.addEventListener('scroll', function(){
+      if(!queued){ queued = true; requestAnimationFrame(update); }
+    }, { passive:true });
+    window.addEventListener('resize', update);
+    update();
+  }
+})();
+</script>
+</body>
+</html>
